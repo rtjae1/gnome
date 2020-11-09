@@ -17,3 +17,82 @@ body {
     height: 15rem;
     width: 30rem;
 }
+
+
+.tearDrop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50% 50% 5% 50%;
+    box-shadow: 0 0 0 .1rem red,
+        0 0 0 .2rem orange,
+        0 0 0 .3rem yellow,
+        0 0 0 .4rem green,
+        0 0 0 .5rem blue,
+        0 0 0 .6rem indigo,
+        0 0 0 .7rem violet;
+}
+
+.h {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 5rem;
+    width: 5rem;
+    border: .2rem solid black;
+    border-radius: 15%;
+    border-bottom: transparent;
+    border-top: transparent;
+    z-index: 100;
+}
+
+.h::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    border: .05rem solid transparent;
+    box-shadow: 0 -.1rem 0 0 red,
+        0 -.2rem 0 0 yellow,
+        0 -.3rem 0 0 green,
+        0 .1rem 0 0 blue,
+        0 .2rem 0 0 indigo,
+        0 .3rem 0 0 violet;
+}
+
+.tinyh {
+    position: absolute;
+    top: 85%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    height: 2.5rem;
+    width: 2.5rem;
+    border: .2rem solid black;
+    border-radius: 15%;
+    border-bottom: transparent;
+    border-top: transparent;
+
+}
+
+.tinyh::after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    border: .05rem solid transparent;
+    box-shadow: 0 .1rem 0 0 red,
+        0 .2rem 0 0 yellow,
+        0 .3rem 0 0 green,
+        0 -.1rem 0 0 blue,
+        0 -.2rem 0 0 indigo,
+        0 -.3rem 0 0 violet;
+}
